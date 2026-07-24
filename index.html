@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Proyecto Integrador</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -17,7 +18,13 @@
         </ul>
     </nav>
 </header>
+
 <main>
+            <aside>
+    <h2>Promociones especiales</h2>
+    <p>Este mes, 20% de descuento en todos los servicios.</p>
+</aside>
+  
     <!-- Sección Hero -->
 
     <section id="inicio">
@@ -26,29 +33,27 @@
     </section>
 
     <!-- Sección de tarjetas -->
-    <section id="servicios">
-        <h2>Nuestros Servicios</h2>
-        <article>
-    <h3>Servicio 1 Diseño UI/UX</h3>
-    <p>Creamos interfaces atractivas y fáciles de usar para tus usuarios.</p>
-</article>
-<article>
-    <h3>Servicio 2 Desarrollo a Medida</h3>
-    <p>Páginas web y aplicaciones con las últimas tecnologías (HTML, CSS, JS).</p>
-
-</article>
-<article>
-    <h3>Servicio 3 Mantenimiento y Hosting</h3>
-    <p>Nos encargamos de que tu sitio esté siempre rápido y seguro.</p>
-</article>
+<section id="servicios" class="section-services">
+    <h2 class="section-services__title">Nuestros Servicios</h2>
+    <div class="cards">
+        <article class="card">
+            <h3 class="card__title">Servicio 1 Diseño UI/UX</h3>
+            <p class="card__text">Creamos interfaces atractivas y fáciles de usar para tus usuarios.</p>
+        </article>
+        <article class="card card--featured">
+            <h3 class="card__title">Servicio 2 Desarrollo a Medida</h3>
+            <p class="card__text">Páginas web y aplicaciones con las últimas tecnologías (HTML, CSS, JS).</p>
+        </article>
+        <article class="card">
+            <h3 class="card__title">Servicio 3 Mantenimiento y Hosting</h3>
+            <p class="card__text">Nos encargamos de que tu sitio esté siempre rápido y seguro.</p>
+        </article>
+    </div>
+</section>
 
 </main>
 
-        <aside>
-    <h3>Promociones especiales</h3>
-    <p>Este mes, 20% de descuento en todos los servicios.</p>
-</aside>
-    </section>
+
 <footer>
     <p>Contacto: upinedae@miumg.edu.gt | Teléfono: 3002-3600</p>
     <p>&copy; 2026 - Proyecto Integrador por Ulises Enriquez</p>
